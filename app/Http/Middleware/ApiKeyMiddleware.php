@@ -16,6 +16,15 @@ class ApiKeyMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        $apikey = $request->header('API_KEY');
+
+        if ($apikey !== env('API_KEY')) {
+            return response()->json([
+                "success" => false,
+                "message" => 'unAuthorized: contact joonik\'s customer support'
+            ], 401);
+        }
+
         return $next($request);
     }
 }

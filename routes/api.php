@@ -11,8 +11,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
  */
 
- Route::apiResource('locations',LocationController::class);
+//Route::apiResource('locations',LocationController::class);
 
+Route::middleware('api_key')->group(function () {
+    Route::get('/locations', [LocationController::class, 'index']);
+});
 
 
 

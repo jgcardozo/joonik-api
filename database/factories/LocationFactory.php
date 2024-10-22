@@ -14,7 +14,7 @@ class LocationFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
+            "name" => $this->faker->city(),
             "image" => 'https://picsum.photos/200/300',
             'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ];
