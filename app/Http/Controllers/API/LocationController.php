@@ -13,7 +13,8 @@ class LocationController extends Controller
         $data = Location::all();
         return response()->json([
             "success" => true,
-            "message" => 'listing locations',
+            "message" => 'listing locations',       
+            "count"=> count($data),
             "data"=> $data,
         ], 200);
     }

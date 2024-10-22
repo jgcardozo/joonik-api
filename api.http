@@ -3,4 +3,4 @@
 ### getLocations
 # @name getLocations
 GET {{baseUrl}}/locations
-API_KEY: rhGASH5alEghJ1i++9BGkDNVXhfOMCx3T5e5Q6E+VFE
+API_KEY: rhGASH5alEghJ1i++9BGkDNVXhfOMCx3T5e5Q6E+VFE=

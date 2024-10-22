@@ -18,10 +18,17 @@ class ApiKeyMiddleware
     {
         $apikey = $request->header('API_KEY');
 
+        if(empty($apikey)){
+            return response()->json([
+                "success" => false,
+                "message" => 'check your request, maybe API_KEY is missing'
+            ], 400); 
+        }
+
         if ($apikey !== env('API_KEY')) {
             return response()->json([
                 "success" => false,
-                "message" => 'unAuthorized: contact joonik\'s customer support'
+                "message" => 'unAuthorized: contact joonik\'s customer support to refresh your API_KEY'
             ], 401);
         }
 
