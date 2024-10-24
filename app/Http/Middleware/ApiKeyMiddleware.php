@@ -25,7 +25,7 @@ class ApiKeyMiddleware
             ], 400); 
         }
 
-        if ($apikey !== env('API_KEY')) {
+        if ($apikey !== config('services.api_key')) { //
             return response()->json([
                 "success" => false,
                 "message" => 'unAuthorized: contact joonik\'s customer support to refresh your API_KEY'

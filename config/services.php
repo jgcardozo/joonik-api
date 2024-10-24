@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+
+    //# API_URL=${APP_URL}:${APP_PORT}/api
+    'app_url' => env('APP_URL'.':8000','http://localhost:8000'),
+    'api_key' => env('API_KEY', 'rhGASH5alEghJ1iJU9BGkDNVXhfOMCx3T5e5Q6EAVFEN'),
+    //'base_api_url' => env('APP_URL'.':'.'', 'http://localhost:8000/api'),
+
 ];

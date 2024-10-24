@@ -1,7 +1,8 @@
 
 # instrucciones de juan guillermo despues de clonar el proyecto desde github
-# me disculpo no alcance a hacer pruebas pues estoy laborando actualmente y debo responder por los objetivos del dia.
-# ya que es un proyecto de pruebaTEcnica "pequeño" no vi la necesidad de usar traits, Request u otros
+# ya que es un proyecto de pruebaTEcnica "pequeño" no vi la necesidad de usar traits, Request u otros, aunque los se usar
+# el archivo services.php se que puede ser inseguro tener valores por defecto en entorno prod, solo lo uso asi para probar y para
+# que les funcione el soft si no definen las VARIABLES= en el archivo .env copiado del .env.example
 
 1. asegurese de tener instalado composer el manejador de paquetes para php
 2. ejecute  composer install
